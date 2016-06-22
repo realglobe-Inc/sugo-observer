@@ -1,10 +1,11 @@
 {
   "name": "sugo-observer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Rmote observer for SUGOS",
   "main": "lib",
   "scripts": {
-    "test": "./ci/test.js"
+    "test": "./ci/test.js",
+    "prepublish": "./ci/build.js"
   },
   "repository": "realglobe-Inc/sugo-observer",
   "keywords": [

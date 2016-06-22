@@ -15,8 +15,8 @@ module.exports = apeTmpl.readmeMdBud({
     travis: false,
     travisCom: true,
     travisComToken: 'aeFzCpBZebyaRijpCFmm',
-    codeclimate: true,
-    codeclimateCoverage: true,
+    codeclimate: false,
+    codeclimateCoverage: false,
     gemnasium: false,
     npm: true,
     standard: true
