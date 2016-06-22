@@ -2,7 +2,11 @@ language: node_js
 node_js:
 - '6'
 before_install:
-- npm install istanbul mocha -g
+- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > .npmrc
+- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> .npmrc
+- cat .npmrc
+- npm install istanbul mocha babel-cli -g
+- npm install babel-preset-es2015 -D
 install:
 - npm install
 before_script:
