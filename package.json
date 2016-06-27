@@ -1,6 +1,6 @@
 {
   "name": "sugo-observer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Rmote observer for SUGOS",
   "main": "lib",
   "scripts": {
