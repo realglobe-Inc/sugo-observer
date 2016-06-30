@@ -46,6 +46,9 @@ Rmote observer for SUGOS
 <a name="overview"></a>
 
 
+SUGO-Observer works as a client of [SUGO-Cloud][sugo_cloud_url] and provides accessors to observer the cloud server status.
+
+ 
 
 <!-- Overview End -->
 
@@ -151,7 +154,10 @@ This software is released under the [Apache-2.0 License](https://github.com/real
 Links
 ------
 
-+ [sugos](https://github.com/realglobe-Inc/sugos)
-+ [sugo-cloud](https://github.com/realglobe-Inc/sugo-cloud)
++ [sugos][sugos_url]
++ [sugo-cloud][sugo_cloud_url]
+
+[sugos_url]: https://github.com/realglobe-Inc/sugos
+[sugo_cloud_url]: https://github.com/realglobe-Inc/sugo-cloud
 
 <!-- Links End -->
