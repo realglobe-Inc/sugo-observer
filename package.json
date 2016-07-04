@@ -1,6 +1,6 @@
 {
   "name": "sugo-observer",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Rmote observer for SUGOS",
   "main": "lib",
   "browser": "sims/browser",
