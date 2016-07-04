@@ -7,7 +7,8 @@
 const SugoObserver = require('../lib/sugo_observer.js')
 const assert = require('assert')
 const sgSocket = require('sg-socket')
-const apemansleep = require('apemansleep')
+const aport = require('aport')
+const asleep = require('asleep')
 const co = require('co')
 
 const { ObservingEvents, AcknowledgeStatus } = require('sg-socket-constants')
@@ -17,12 +18,10 @@ const { START, STOP, CHANGE } = ObservingEvents
 describe('sugo-observer', function () {
   this.timeout(4000)
 
-  let sleep = apemansleep.create({})
-  let port = 9859
-  let server
-  let sockets = {}
+  let port, server
 
   before(() => co(function * () {
+    port = yield aport()
     server = sgSocket(port)
     server.of('observers').on('connection', (socket) => {
       socket.on(START, (data, callback) => {
@@ -39,7 +38,7 @@ describe('sugo-observer', function () {
   }))
 
   after(() => co(function * () {
-    yield sleep.sleep(200)
+    yield asleep(200)
     server.close()
   }))
 
@@ -52,7 +51,7 @@ describe('sugo-observer', function () {
     })
 
     yield observer.start()
-    yield sleep.sleep(300)
+    yield asleep(300)
     yield observer.stop()
 
     assert.deepEqual(changed, { foo: 'bar' })
