@@ -4,9 +4,9 @@
 
 'use strict'
 
-const apeTmpl = require('ape-tmpl')
+const { mochaTestJsBud } = require('ape-tmpl')
 
-module.exports = apeTmpl.mochaTestJsBud({
+module.exports = mochaTestJsBud({
   src: [
     `${__dirname}/../lib/**/*.js`
   ],

@@ -122,10 +122,10 @@ co(function * () {
     /* ... */
   })
 
-  yield observer.start()
+  yield observer.start() // Start observing
   /* ... */
   yield new Promise((resolve) => setTimeout(resolve, 80000))
-  yield observer.stop()
+  yield observer.stop() // Stop observing
 }).catch((err) => console.error(err))
 
 
