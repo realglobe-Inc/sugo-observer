@@ -1,6 +1,6 @@
 {
   "name": "sugo-observer",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Rmote observer for SUGOS",
   "main": "lib",
   "browser": "shim/browser",
