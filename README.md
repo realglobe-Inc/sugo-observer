@@ -59,6 +59,7 @@ SUGO-Observer works as a client of [SUGO-Cloud][sugo_cloud_url] and provides acc
 <!-- Section from "doc/guides/00.Requirements.md.hbs" Start -->
 
 <a name="section-doc-guides-00-requirements-md"></a>
+
 Requirements
 -----
 
@@ -87,6 +88,7 @@ Requirements
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -100,6 +102,7 @@ $ npm install sugo-observer --save
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 ---------
 
