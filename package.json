@@ -31,7 +31,6 @@
   "devDependencies": {
     "ababel": "^1.0.19",
     "ababel-es2015": "^1.0.2",
-    "aport": "^1.0.0",
     "amocha": "^1.0.8",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.2",
@@ -39,12 +38,14 @@
     "ape-tasking": "^4.0.7",
     "ape-tmpl": "^5.0.14",
     "ape-updating": "^4.0.4",
+    "aport": "^1.0.0",
     "asleep": "^1.0.3",
     "coz": "^6.0.14",
     "filecopy": "^2.0.1",
     "filedel": "^2.0.2",
     "injectmock": "^2.0.0",
     "sg-socket": "^1.0.13",
+    "sg-travis": "^1.1.25",
     "sugos-assets": "^2.0.1"
   },
   "engines": {
