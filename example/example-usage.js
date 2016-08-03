@@ -8,10 +8,10 @@
 const co = require('co')
 const sugoObserver = require('sugo-observer')
 
-const CLOUD_URL = 'my-sugo-cloud.example.com/observers'
+const HUB_URL = 'my-sugo-hub.example.com/observers'
 
 co(function * () {
-  let observer = sugoObserver(CLOUD_URL, (data) => {
+  let observer = sugoObserver(HUB_URL, (data) => {
     console.log('Data changed:', data)
     /* ... */
   })
