@@ -43,12 +43,10 @@ describe('sugo-observer', function () {
   }))
 
   it('Sugo observer', () => co(function * () {
-    let url = `http://localhost:${port}/observers`
-
     let changed = null
-    let observer = new SugoObserver(url, (data) => {
+    let observer = new SugoObserver((data) => {
       changed = data
-    })
+    }, { port })
 
     yield observer.start()
     yield asleep(300)

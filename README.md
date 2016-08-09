@@ -117,12 +117,12 @@ Usage
 const co = require('co')
 const sugoObserver = require('sugo-observer')
 
-const HUB_URL = 'my-sugo-hub.example.com/observers'
-
 co(function * () {
-  let observer = sugoObserver(HUB_URL, (data) => {
+  let observer = sugoObserver((data) => {
     console.log('Data changed:', data)
     /* ... */
+  }, {
+    host: 'my-sugo-hub.example.com'
   })
 
   yield observer.start() // Start observing
