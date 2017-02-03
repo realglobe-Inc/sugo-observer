@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
 /**
- * Commit empty and push to sugo-scaffold
+ * Commit empty and push to sugos
  */
 
 process.chdir(`${__dirname}/../..`)
 
-const { pushOtherRepository } = require('sg-travis')
+const { pushOtherRepository } = require('sugos-travis')
 
 pushOtherRepository({
   repository: 'sugos'
