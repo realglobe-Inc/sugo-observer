@@ -46,7 +46,7 @@ Remote observer for SUGOS
 <a name="overview"></a>
 
 
-SUGO-Observer works as a client of [SUGO-Hub][sugo_hub_url] and provides accessors to observe the cloud server status.
+SUGO-Observer works as a client of [SUGO-Hub][s_u_g_o_hub_url] and provides accessors to observe the cloud server status.
 
  
 
