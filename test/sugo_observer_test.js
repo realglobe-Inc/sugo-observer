@@ -59,6 +59,8 @@ describe('sugo-observer', function () {
       changed = data
     }, { port })
 
+    assert.ok(observer.clientType)
+
     yield observer.start()
     yield asleep(300)
     yield observer.stop()
