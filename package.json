@@ -6,7 +6,7 @@
   "browser": "shim/browser",
   "scripts": {
     "test": "node ./ci/test.js",
-    "prepublish": "node ./ci/assets.js && node ./ci/build.js && node ./ci/shim.js"
+    "prepare": "node ./ci/assets.js && node ./ci/build.js && node ./ci/shim.js"
   },
   "repository": "realglobe-Inc/sugo-observer",
   "keywords": [
@@ -27,10 +27,10 @@
     "argx": "^3.0.2",
     "bwindow": "^1.0.7",
     "co": "^4.6.0",
-    "sg-socket-client": "^1.2.17",
+    "sg-socket-client": "^2.0.1",
     "sg-socket-constants": "^1.6.2",
-    "sugo-client": "^1.1.1",
-    "sugo-client-auth": "^1.0.1",
+    "sugo-client": "^2.0.1",
+    "sugo-client-auth": "^2.0.1",
     "sugo-constants": "^2.4.2"
   },
   "devDependencies": {
@@ -41,14 +41,14 @@
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.8",
     "ape-tmpl": "^5.0.15",
-    "ape-updating": "^4.0.5",
+    "ape-updating": "^4.1.1",
     "aport": "^1.0.0",
     "asleep": "^1.0.3",
     "coz": "^6.0.17",
     "filecopy": "^3.0.1",
     "filedel": "^2.0.4",
     "injectmock": "^2.0.0",
-    "sg-socket": "^1.0.15",
+    "sg-socket": "^2.0.1",
     "socketio-auth": "^0.1.0",
     "sugos-assets": "^2.0.3",
     "sugos-travis": "^2.0.7"
